@@ -32,7 +32,7 @@ def grid_gen(x_start, x_stop, y_start, y_stop, z_start, z_stop, delta):
 
 
 ########################################################################################
-grid_gen(-3.5, 3.5, 0.0, 4.5, -3.0, 4.0, 0.05)
+grid_gen(-3.5, 3.5, 0.0, 4.5, -3.0, 4.0, 0.5)
 print('Total Bq atoms number is', len(ix))
 with open('cube_grid', 'w', newline='') as csvfile:
     cubewriter = csv.writer(csvfile, delimiter='\t',
