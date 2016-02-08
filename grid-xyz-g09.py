@@ -116,7 +116,7 @@ def main():
 
             # set Bq atom coord in number of max_bq_num
             for j in range(len(chunks_by_bq[i])):
-                cube_writer.writerow(['Bq ',
+                cube_writer.writerow(['Bq ', '0',
                                       ix[max_bq_num*i+j],
                                       iy[max_bq_num*i+j],
                                       iz[max_bq_num*i+j]])
