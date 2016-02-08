@@ -1,5 +1,4 @@
 # --------------------------------Import----------------------------------------#
-
 import csv
 
 max_bq_num = 95
@@ -58,13 +57,15 @@ def print_logo():
 
 # --------------------------------Main----------------------------------------#
 def main():
+
     print_logo()
+    # x_start, x_stop, y_start, y_stop, z_start, z_stop, delta
     grid_gen(-3.5, 3.5, 0.0, 4.5, -3.0, 4.0, 0.5)
     chunks_by_bq = list(chunks(ix, max_bq_num))
+
     print('Total Bq atoms number is', len(ix))
     print('Total Files Number is', len(chunks_by_bq))
     print('Last file Bq number is', len(chunks_by_bq[-1]))
-
 
     for i in range(len(chunks_by_bq)):
         # set name and extension for import file:run for g09;mol for dalton
@@ -80,10 +81,17 @@ def main():
 
             # g09 key words
             cube_writer.writerow(['# HF/6-311++G(d,p) SCF(Tight) NMR CPHF(Separate) Test '])
-            cube_writer.writerow([])
-            cube_writer.writerow(['C9H9+ HF/6-311++G(d,p) nmr partial 3d grid'])
+
+            # space line
             cube_writer.writerow([])
 
+            # job title
+            cube_writer.writerow(['C9H9+ HF/6-311++G(d,p) nmr partial 3d grid'])
+
+            # space line
+            cube_writer.writerow([])
+
+            # Geo
             cube_writer.writerow(['+1 1'])
             cube_writer.writerow(['C,0,0.,0.,1.645014194'])
             cube_writer.writerow(['C,0,0.4905022324,1.2427684773,1.1554414148'])
@@ -103,6 +111,8 @@ def main():
             cube_writer.writerow(['H,0,1.5936377795,-2.2790433661,-1.3665504299'])
             cube_writer.writerow(['H,0,-1.490812806,-0.3325910524,-1.6109751404'])
             cube_writer.writerow(['H,0,1.490812806,0.3325910524,-1.6109751404'])
+
+            # space line
             cube_writer.writerow([])
 
             # set Bq atom coord in number of max_bq_num
@@ -111,7 +121,6 @@ def main():
                                       ix[max_bq_num*i+j],
                                       iy[max_bq_num*i+j],
                                       iz[max_bq_num*i+j]])
-
             cube_writer.writerow([])
 
             # set weak conductivity with bq
