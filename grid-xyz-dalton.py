@@ -82,42 +82,42 @@ def main():
             cube_writer.writerow(['THIS FILE CREATED BY /BQ_ATOMS_GEN FOR DALTON'])
 
             # g09 key words
-            cube_writer.writerow(['Atomtypes=4 Charge=1 Generator=1 XY Angstrom Spherical'])
+            cube_writer.writerow(['Atomtypes=3 Charge=1 Generator=1 XY Angstrom Spherical'])
 
             # Geo
             cube_writer.writerow(['Charge=6.0  Atoms=1     Basis=3-21G'])
 
             # Geo
-            cube_writer.writerow(['C', '0.', '0.', '1.645014194'])
+            cube_writer.writerow(['C          0.00000        0.00000        1.64501'])
 
             # Geo
-            cube_writer.writerow(['Charge=6.0  Atoms=8     Basis=3-21G'])
+            cube_writer.writerow(['Charge=6.0  Atoms=4     Basis=3-21G'])
 
-            cube_writer.writerow(['C', '0.4905022324', '1.27684773', '1.1554414148'])
-            cube_writer.writerow(['C', '-0.4905022324', '-1.2427684773', '1.1554414148'])
-            cube_writer.writerow(['C', '0.0100585215', '2.0928052569', '0.1040785875'])
-            cube_writer.writerow(['C', '-0.0100585215', '-2.0928052569', '0.1040785875'])
-            cube_writer.writerow(['C', '-0.8152087457', '1.6410894083', '-0.9354914584'])
-            cube_writer.writerow(['C', '0.8152087457', '-1.6410894083', '-0.9354914584'])
-            cube_writer.writerow(['C', '-0.6569284614', '0.2832859329', '-1.251946014'])
-            cube_writer.writerow(['C', '0.6569284614', '-0.2832859329', '-1.251946014'])
+            cube_writer.writerow(['C          0.49050        1.24277        1.15544'])
+            # cube_writer.writerow(['C         -0.49050       -1.24277        1.15544'])
+            cube_writer.writerow(['C          0.01006        2.09281        0.10408'])
+            # cube_writer.writerow(['C         -0.01006       -2.09281        0.10408'])
+            cube_writer.writerow(['C         -0.81521        1.64109       -0.93549'])
+            # cube_writer.writerow(['C          0.81521       -1.64109       -0.93549'])
+            cube_writer.writerow(['C         -0.65693        0.28329       -1.25195'])
+            # cube_writer.writerow(['C          0.65693       -0.28329       -1.25195'])
 
             cube_writer.writerow(['Charge=1.0  Atoms=1     Basis=3-21G'])
 
-            cube_writer.writerow(['H', '0.', '0.', '2.7459418542'])
+            cube_writer.writerow(['H          0.00000        0.00000        2.74594'])
 
-            cube_writer.writerow(['Charge=1.0  Atoms=8     Basis=3-21G'])
+            cube_writer.writerow(['Charge=1.0  Atoms=4     Basis=3-21G'])
 
-            cube_writer.writerow(['H', '1.0699783805', '1.7858874614', '1.9137457041'])
-            cube_writer.writerow(['H', '-1.0699783805', '-1.7858874614', '1.9137457041'])
-            cube_writer.writerow(['H', '0.12964425', '3.1677255378', '0.2859658405'])
-            cube_writer.writerow(['H', '-0.12964425', '-3.1677255378', '0.2859658405'])
-            cube_writer.writerow(['H', '-1.5936377795', '2.2790433661', '-1.3665504299'])
-            cube_writer.writerow(['H', '1.5936377795', '-2.2790433661', '-1.3665504299'])
-            cube_writer.writerow(['H', '-1.490812806', '-0.3325910524', '-1.6109751404'])
-            cube_writer.writerow(['H', '1.490812806', '0.3325910524', '-1.6109751404'])
+            cube_writer.writerow(['H          1.06998        1.78589        1.91375'])
+            # cube_writer.writerow(['H         -1.06998       -1.78589        1.91375'])
+            cube_writer.writerow(['H          0.12964        3.16773        0.28597'])
+            # cube_writer.writerow(['H         -0.12964       -3.16773        0.28597'])
+            cube_writer.writerow(['H         -1.59364        2.27904       -1.36655'])
+            # cube_writer.writerow(['H          1.59364       -2.27904       -1.36655'])
+            # cube_writer.writerow(['H         -1.49081       -0.33259       -1.61098'])
+            cube_writer.writerow(['H          1.49081        0.33259       -1.61098'])
 
-            cube_writer.writerow(['Charge=0.0  Atoms=10'])
+            cube_writer.writerow(['Charge=0.0  Atoms=10    Basis=pointcharge'])
 
             # set Bq atom coord in number of max_bq_num
             for j in range(len(chunks_by_bq[i])):
