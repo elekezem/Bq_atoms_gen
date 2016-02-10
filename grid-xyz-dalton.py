@@ -82,7 +82,7 @@ def main():
             cube_writer.writerow(['THIS FILE CREATED BY /BQ_ATOMS_GEN FOR DALTON'])
 
             # g09 key words
-            cube_writer.writerow(['Atomtypes=3 Charge=1 Generator=1 XY Angstrom Spherical'])
+            cube_writer.writerow(['Atomtypes=5 Charge=1 Generator=1 XY Angstrom Spherical'])
 
             # Geo
             cube_writer.writerow(['Charge=6.0  Atoms=1     Basis=3-21G'])

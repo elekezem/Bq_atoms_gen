@@ -41,18 +41,8 @@
       <file leaf-file-name="grid-xyz-dalton.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grid-xyz-dalton.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.826087">
-              <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="c9h9+000000.mol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9h9+000000.mol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.86413044">
+              <caret line="101" column="61" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -523,7 +513,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455092250607</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="bug fix&#10;">
+      <created>1455115039822</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1455115039822</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +586,8 @@
     <MESSAGE value="fix bq &amp; add 2d" />
     <MESSAGE value="fix bq &amp; add 2d , fix bugs" />
     <MESSAGE value="add run.sh gen" />
-    <option name="LAST_COMMIT_MESSAGE" value="add run.sh gen" />
+    <MESSAGE value="bug fix&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -790,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/c9h9+000000.mol">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.8152174">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
@@ -798,8 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid-xyz-dalton.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.826087">
-          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.86413044">
+          <caret line="101" column="61" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
           <folding />
         </state>
       </provider>
