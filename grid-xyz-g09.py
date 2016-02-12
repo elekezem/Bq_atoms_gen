@@ -70,17 +70,17 @@ def main():
     for i in range(len(chunks_by_bq)):
         # set name and extension for import file:run for g09;mol for dalton
 
-        with open("{}.run".format("%06d" % i), "w") as csv_file:
-            cube_writer = csv.writer(csv_file, delimiter='\t')
+        with open("c9h9+.hf.6-311++.{}.run".format("%06d" % i), "w") as csv_file:
+            cube_writer = csv.writer(csv_file, delimiter=' ')
 
             # set cores number to calculate
-            cube_writer.writerow(['%NProc=2'])
+            cube_writer.writerow(['%NProc=4'])
 
             # set mem size to calculate
             cube_writer.writerow(['%Mem=2Gb'])
 
             # g09 key words
-            cube_writer.writerow(['# HF/6-311++G(d,p) SCF(Tight) NMR CPHF(Separate) Test'])
+            cube_writer.writerow(['#', 'HF/6-311++G(d,p)', 'SCF(Tight)', 'NMR', 'CPHF(Separate)', 'Test'])
 
             # space line
             cube_writer.writerow([])
@@ -92,7 +92,7 @@ def main():
             cube_writer.writerow([])
 
             # eletron
-            cube_writer.writerow(['+1 1'])
+            cube_writer.writerow(['+1', '1'])
 
             # Geo
             cube_writer.writerow(['C,0,0.,0.,1.645014194'])
@@ -128,8 +128,8 @@ def main():
             # set weak conductivity with bq
             for c in range(len(chunks_by_bq[i]) + atoms_num):
                 cube_writer.writerow([c+1])
-            cube_writer.writerow([])
             csv_file.close()
+            print('creat',"c9h9+.hf.6-311++.{}.run".format("%06d" % i))
 
 if __name__ == '__main__':
     main()
