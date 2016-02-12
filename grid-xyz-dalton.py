@@ -125,6 +125,7 @@ def main():
                                       iy[max_bq_num * i + j],
                                       iz[max_bq_num * i + j]])
             cube_writer.writerow(['%EOF%'])
+            print('creat',"c9h9+HF.6-31g.{}.mol".format("%06d" % i))
             csv_file.close()
             # # set weak conductivity with bq
             # for c in range(len(chunks_by_bq[i]) + atoms_num):
